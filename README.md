@@ -173,3 +173,27 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
   ```
+
+## packeges 
+    ### Admin Generator 
+``` python
+    Django Admin generato :
+                    pip install django-admin-generator
+    Install App     'django_admin_generator'
+    Using           python manage.py admin_generator APP_NAME >> APP_NAME/admin.py
+```
+
+    ### Admin Inteface 
+``` python
+    Django Admin Interface :
+                    pip install django-admin-interface
+                    
+    Install App     'admin_interface',
+                    'flat_responsive', # only if django version < 2.0
+                    'flat', # only if django version < 1.9
+                    'colorfield',
+                    
+    Using           python manage.py migrate
+                    python manage.py collectstatic
+
+```
